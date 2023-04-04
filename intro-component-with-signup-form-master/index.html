@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="first-col">
+        <h1>Learn to code by watching others</h1>
+        <p class="main-para">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="second-col">
+        <p class="purple">
+          <span>Try it free 7 days</span> then $20/mo. thereafter
+        </p>
+        <div class="form-box">
+          <form id="form-input">
+            <div class="input-box">
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                class="fname-error"
+                placeholder="First Name"
+              />
+              <label for="fname" id="lbltxt-fname"
+                >First Name cannot be empty</label
+              >
+            </div>
+            <div class="input-box">
+              <input
+                type="text"
+                id="lname"
+                name="lname"
+                placeholder="Last Name"
+              />
+              <label for="lname" id="lbltxt-lname"
+                >Last Name cannot be empty</label
+              >
+            </div>
+            <div class="input-box">
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Email Address"
+              />
+              <label for="email" id="lbltxt-email"
+                >Looks like this is not an email</label
+              >
+            </div>
+            <div class="input-box">
+              <input
+                type="password"
+                id="pwd"
+                name="pwd"
+                placeholder="Password"
+              />
+              <label for="pwd" id="lbltxt-pwd">Password cannot be empty</label>
+            </div>
+            <input type="submit" id="submit" value="CLAIM YOUR FREE TRIAL" />
+          </form>
+          <p>
+            By clicking the button, you are agreeing to our
+            <a href="#">Terms and Services</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

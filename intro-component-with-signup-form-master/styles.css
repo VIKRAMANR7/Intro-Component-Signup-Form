@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+:root {
+  --bg-white: hsl(0, 0%, 100%);
+  --bg-red: hsl(0, 100%, 74%);
+  --bg-green: hsl(154, 59%, 51%);
+  --bg-blue: hsl(248, 32%, 49%);
+  --bg-darkblue: hsl(249, 10%, 26%);
+  --bg-grayishblue: hsl(246, 25%, 77%);
+  --bg-lightgray: hsl(0, 0%, 83%);
+}
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+input {
+  font: inherit;
+  cursor: pointer;
+  display: block;
+}
+label {
+  font: inherit;
+  display: block;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--bg-red) url(./images/bg-intro-desktop.png) no-repeat;
+  font-family: "Poppins", sans-serif;
+  color: var(--bg-white);
+}
+.container {
+  max-width: 1200px;
+  height: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container > div {
+  max-width: 600px;
+}
+h1 {
+  max-width: 600px;
+  font-size: 6rem;
+  line-height: 6rem;
+}
+.main-para {
+  max-width: 600px;
+  padding: 5rem 0 0 0;
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+.purple {
+  width: 570px;
+  padding: 1.8rem 0;
+  margin-bottom: 3.5rem;
+  font-size: 1.7rem;
+  text-align: center;
+  background-color: var(--bg-blue);
+  border-radius: 1rem;
+}
+.purple span {
+  font-weight: 600;
+}
+.form-box {
+  max-width: 570px;
+  padding: 4rem 0;
+  background-color: var(--bg-white);
+  border-radius: 10px;
+}
+form input {
+  width: 500px;
+  padding: 1.8rem 0;
+  border: 2px solid var(--bg-lightgray);
+  color: var(--bg-darkblue);
+  margin: 0 3.5rem;
+  border-radius: 5px;
+  caret: var(--bg-blue) block;
+}
+
+.input-box:not(:nth-of-type(1)) {
+  margin: 2.5rem 0;
+}
+label {
+  display: none;
+  margin: 0.8rem 3rem 0.5rem 0;
+  color: var(--bg-red);
+  font-size: 1.3rem;
+  font-style: italic;
+  text-align: right;
+  font-weight: 600;
+}
+input::placeholder {
+  font-size: 1.7rem;
+  color: var(--bg-darkblue);
+  font-weight: 700;
+}
+input:focus {
+  outline: none;
+}
+input:focus::placeholder {
+  color: transparent;
+}
+input[type="text"],
+input[type="password"] {
+  font-size: 1.7rem;
+  text-indent: 2.5rem;
+  color: var(--bg-darkblue);
+  font-weight: 700;
+}
+input[type="submit"] {
+  font-size: 1.9rem;
+  background-color: var(--bg-green);
+  color: var(--bg-white);
+  border: none;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.form-box p {
+  font-size: 1.3rem;
+  text-align: center;
+  color: var(--bg-grayishblue);
+  font-weight: 600;
+}
+.form-box p a {
+  color: var(--bg-red);
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background: hsl(0, 100%, 74%) url(./images/bg-intro-mobile.png) no-repeat
+      top center;
+  }
+  .container {
+    flex-direction: column;
+    max-width: 375px;
+    padding: 10rem 2rem;
+  }
+  .container > div {
+    max-width: 375px;
+  }
+  h1 {
+    max-width: 375px;
+    padding-right: 0;
+    font-size: 3rem;
+    line-height: 3.6rem;
+    text-align: center;
+  }
+  .main-para {
+    max-width: 375px;
+    padding: 4rem 0 5rem 0;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  .purple {
+    max-width: 335px;
+    padding: 1.8rem 4rem;
+    margin-bottom: 2.5rem;
+  }
+  .form-box {
+    max-width: 335px;
+    padding: 3rem 0;
+  }
+  form input {
+    width: 295px;
+    padding: 1.8rem 0;
+    margin: 0 2rem;
+  }
+  input::placeholder {
+    font-size: 1.5rem;
+  }
+  input[type="text"],
+  input[type="password"] {
+    font-size: 1.2rem;
+    text-indent: 1rem;
+  }
+  input[type="submit"] {
+    font-size: 1.7rem;
+  }
+  .form-box p {
+    font-size: 1.2rem;
+    padding: 0 3rem;
+  }
+}
